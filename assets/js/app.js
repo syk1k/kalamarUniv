@@ -95,9 +95,6 @@
 		sidebarClick(parseInt($(this).attr("id"), 10));
 	});
 
-	$(document).on("click", function () {
-        alert(map.getBounds().toBBoxString());
-    });
 	
 
 })();
