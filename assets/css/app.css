@@ -1,0 +1,57 @@
+html, body, #container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#sidebar {
+    display: block;
+    width: 250px;
+    height: 100px;
+    max-width: 100%;
+    float: left;
+
+}
+
+#map
+{
+    width: auto;
+    height: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.nav {
+    height: 70px;
+    background-color: #5a5559;
+}
+
+.navbar-brand {
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.sidebar-table {
+    position: absolute;
+    width:250px;
+    top: 155px;
+    bottom: 0;
+    overflow: auto;
+}
+
+.panel-heading{
+    width: 250px;
+    padding: 4px;
+}
+.panel-body{
+    width: 250px;
+    padding: 4px;
+    margin:4px;
+}
+
+.sort-btn{
+    width: 70px;
+}
+
+
+
+

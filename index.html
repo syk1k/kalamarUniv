@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="assets/css/MarkerCluster.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/app.css"/>
+    <title>Title</title>
+</head>
+<body>
+<!--Navigation bar-->
+<nav class="nav navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <a class="navbar-brand" href="#"><h3>Kalamar Universities</h3></a>
+    <!-- Search box -->
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control text-center" type="search" placeholder="Make a Search">
+    </form>
+</nav>
+
+<div class=" contenu" id="container" >
+
+    <div id="sidebar">
+        <div class="sidebar-wrapper">
+            <div id="univList">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center bg-light">List Of Universities </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xl-7 col-md-7">
+                                <input class="search form-control" placeholder="Filter"/>
+                            </div>
+                            <div class="col-xl-4 col-md-4">
+                                <button class="btn btn-dark pull-right sort sort-btn" data-sort="name"> <i class="fa fa-sort"></i>&nbsp;&nbsp;Sort </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-table">
+                    <table class="table table-hover  table-sm table-responsive">
+                        <thead hidden>
+                        <tr>
+                            <th>Name</th>
+                        </tr>
+                        </thead>
+                        <tbody class="list">
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="map">
+
+    </div>
+</div>
+<script type="text/javascript" src="assets/js/leaflet-src.js"></script>
+<script type="text/javascript" src="assets/js/list.js"></script>
+<script type="text/javascript" src="assets/js/leaflet.markercluster-src.js"></script>
+<script type="text/javascript" src="data/university_togo.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/fontawesome.js"></script>
+<script type="text/javascript" src="assets/js/typeahead.bundle.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
