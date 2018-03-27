@@ -36,7 +36,7 @@
                 }
             });
             univSearch.push({name:layer.feature.properties.name});
-            $("#univList tbody").append("<tr class='feature-row' id="+L.stamp(layer)+" lat="+layer.getLatLng().lat+" long="+layer.getLatLng().lng+">"+"<td class='bg-light name'>"+layer.feature.properties.name+"</td>"+"</tr>");
+            //$("#univList tbody").append("<tr class='feature-row' id="+L.stamp(layer)+" lat="+layer.getLatLng().lat+" long="+layer.getLatLng().lng+">"+"<td class='bg-light name'>"+layer.feature.properties.name+"</td>"+"</tr>");
         }
     });
 
@@ -80,7 +80,7 @@
 	
 	// Creation of the attribution controle and adding it to the map
 	L.control.attribution({
-		prefix: '<a href="kalamar.tg">Kalamar</a>'
+		prefix: '<a href="http://kalamar.tg" target="_blank">Kalamar</a>'
 	}).addTo(map);
 	
 	// Manage the event on Click to the sidebar
@@ -93,7 +93,25 @@
 	
 	$(document).on("click", ".feature-row", function(e) { // This function execute a click on the document take the id of the element Clicked and pass it to the sidebarClick function
 		sidebarClick(parseInt($(this).attr("id"), 10));
+
 	});
-	
+
+	$("#contact").click(function () {
+        $("#contact_modal").modal('show');
+    });
+
+	$('#contact_modal').on('click', '#send', function () {
+        this.modal('show');
+    });
+
+
+    $("#about").click(function () {
+        $("#about_modal").modal('show');
+    });
+
+    $('#about_modal').on('click', '#send', function () {
+        this.modal('show');
+    })
+
 
 })();

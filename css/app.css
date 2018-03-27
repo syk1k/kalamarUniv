@@ -1,16 +1,21 @@
-body{
-    margin-top: 20px;
-    background: silver;
+
+
+#map{
+    height: 500px;
 }
 
 .contenu{
-    margin-top: 20px;
-}
-
-#map{
-    height: 750px;
+    margin-top: 40px;
+    height: 550px;
 }
 
 .entete{
-    color : white;
+    padding-top: 20px;
 }
+
+body{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #78c0ff;
+}
+
