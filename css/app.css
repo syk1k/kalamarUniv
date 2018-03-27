@@ -19,3 +19,22 @@ body{
     background: #78c0ff;
 }
 
+body.pushable > .pusher{
+    background-color: #78c0ff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#side_items{
+    margin-top: 40px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#filter_univ{
+    width: 150px;
+}
+
+#univList{
+    margin-top: 10px;
+}

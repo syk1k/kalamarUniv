@@ -36,7 +36,7 @@
                 }
             });
             univSearch.push({name:layer.feature.properties.name});
-            //$("#univList tbody").append("<tr class='feature-row' id="+L.stamp(layer)+" lat="+layer.getLatLng().lat+" long="+layer.getLatLng().lng+">"+"<td class='bg-light name'>"+layer.feature.properties.name+"</td>"+"</tr>");
+            $("#univList tbody").append("<tr class='feature-row' id="+L.stamp(layer)+" lat="+layer.getLatLng().lat+" long="+layer.getLatLng().lng+">"+"<td class='bg-light name'>"+layer.feature.properties.name+"</td>"+"</tr>");
         }
     });
 
@@ -111,7 +111,11 @@
 
     $('#about_modal').on('click', '#send', function () {
         this.modal('show');
-    })
+    });
+
+    $("#list").on('click', function () {
+        $('.ui.sidebar').sidebar('toggle');
+    });
 
 
 })();

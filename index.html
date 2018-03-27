@@ -12,43 +12,74 @@
 </head>
 <body>
 
-<div class="entete"> <!-- Pour le menu -->
-    <div class="ui">
-        <h1>Map Univ</h1>
-        <div class="ui inverted secondary menu">
-            <a class="item" id="list"><i class="icon align justify"></i>List<i class="icon dropdown"></i></a>
-            <a class="item" id="about"><i class="icon question circle"></i>About</a>
-            <a class="item" id="contact"><i class="icon tty"></i>Contact</a>
-            <div class="right menu">
-                <div class="item">
-                    <div class="ui icon input">
-                        <input type="text" placeholder="Search ...">
-                        <i class="search link icon"></i>
+<div class="ui sidebar vertical menu" style="background-color: #0e8c8c;">
+    <div id="side_items">
+        <div class="ui left icon input">
+            <i class="icon graduation cap"></i>
+            <input class="prompt" type="search" placeholder="Filter" id="filter_univ">
+        </div>
+        <button class="ui button right floated">Sort</button>
+        <div id="univList">
+            <table class="ui selectable table">
+                <thead hidden>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<div class="pusher">
+
+    <div class="entete"> <!-- Pour le menu -->
+        <div class="ui container fixed top">
+            <h1>Map Univ</h1>
+            <div class="ui inverted secondary menu">
+                <a class="item" id="list"><i class="icon align justify"></i>List<i class="icon dropdown"></i></a>
+                <a class="item" id="about"><i class="icon question circle"></i>About</a>
+                <a class="item" id="contact"><i class="icon tty"></i>Contact</a>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Search ...">
+                            <i class="search link icon"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="contenu">
-    <div class="ui">
-        <div class="ui grid">
-            <div class="column">
-                <div class="ui segment">
-                    <div id="map"></div>
+    <div class="contenu">
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="column">
+                    <div class="ui segment">
+                        <div id="map"></div>
+                    </div>
                 </div>
-            </div>
 
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ui container">
+        <div style="text-align: center;margin-top: 20px;">
+            <i class="ui icon copyright outline"></i>Copyright <a href="http://kalamar.tg" target="_blank">Kalamar 2018</a>
         </div>
     </div>
 
-</div>
+<!--
+                                               This is for the side bar menu
+                                                                                                             //-->
 
-<div class="ui container">
-    <div style="text-align: center;margin-top: 20px;">
-        <i class="ui icon copyright outline"></i>Copyright <a href="http://kalamar.tg" target="_blank">Kalamar 2018</a>
-    </div>
+
+    <!-- Site content !-->
 </div>
 
 <!-- //
