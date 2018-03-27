@@ -25,6 +25,18 @@
         accessToken: 'pk.eyJ1Ijoic3lrMWsiLCJhIjoiY2plb2JqMHllNGYydjJ3cGVmMnE2aHlkYSJ9.uXv_J38Ndp0_aHJ0r9zP4A'
     });
 
+    var usgsImagery = L.layerGroup([L.tileLayer("http://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}", {
+        maxZoom: 15,
+    }), L.tileLayer.wms("http://raster.nationalmap.gov/arcgis/services/Orthoimagery/USGS_EROS_Ortho_SCALE/ImageServer/WMSServer?", {
+        minZoom: 16,
+        maxZoom: 19,
+        layers: "0",
+        format: 'image/jpeg',
+        transparent: true,
+        attribution: "Aerial Imagery courtesy USGS"
+    })]);
+
+
     // Creation of the overlays
 
     var univLayer = L.geoJSON(univ, {
@@ -59,7 +71,8 @@
     var baseMaps = {
         "OpenStreetMap": osm,
         "CartoDB": cartoLight,
-        "MapBox": mapbox
+        "MapBox": mapbox,
+        "Satelite": usgsImagery
     };
 
     var overlayMaps = {
