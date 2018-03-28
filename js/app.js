@@ -25,14 +25,6 @@
         accessToken: 'pk.eyJ1Ijoic3lrMWsiLCJhIjoiY2plb2JqMHllNGYydjJ3cGVmMnE2aHlkYSJ9.uXv_J38Ndp0_aHJ0r9zP4A'
     });
 
-    var usgsImagery = L.tileLayer("http://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",{
-        maxZoom: 19,
-        format: 'image/jpeg',
-        transparent: true,
-        attribution: "Aerial Imagery courtesy USGS"}
-    );
-
-
     // Creation of the overlays
 
     var univLayer = L.geoJSON(univ, {
@@ -68,7 +60,6 @@
         "OpenStreetMap": osm,
         "CartoDB": cartoLight,
         "MapBox": mapbox,
-        "Satelite": usgsImagery
     };
 
     var overlayMaps = {
