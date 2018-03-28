@@ -48,7 +48,7 @@
         }
     });
 
-    //var sideBarUnivList = new List("univList", options);
+    var sideBarUnivList = new List("univList", options);
 
     // Creation of the markercluster to hold all markers
     var markers = new L.markerClusterGroup();
@@ -102,6 +102,7 @@
 	
 	$(document).on("click", ".feature-row", function(e) { // This function execute a click on the document take the id of the element Clicked and pass it to the sidebarClick function
 		sidebarClick(parseInt($(this).attr("id"), 10));
+		$('.ui.sidebar').sidebar('toggle');
 
 	});
 
@@ -123,7 +124,10 @@
     });
 
     $("#list").on('click', function () {
-        $('.ui.sidebar').sidebar('toggle');
+        $('.ui.sidebar')
+            .sidebar('setting', 'transition', 'scale down')
+            .sidebar('setting' ,'dimPage', false)
+            .sidebar('toggle');
     });
 
 
