@@ -21,7 +21,7 @@
     var mapbox = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 18,
-        id: 'streets-v9',
+        id: 'satellite-streets-v9',
         accessToken: 'pk.eyJ1Ijoic3lrMWsiLCJhIjoiY2plb2JqMHllNGYydjJ3cGVmMnE2aHlkYSJ9.uXv_J38Ndp0_aHJ0r9zP4A'
     });
 
